@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Emscripten",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/jebba/emsdk/upstream/emscripten/system/include",
+                "C:/Users/jebba/emsdk/upstream/emscripten/system/includee/libc",
+                "C:/Users/jebba/emsdk/upstream/emscripten/system/include/SDL"
+            ],
+            "intelliSenseMode": "windows-msvc-x64",
+            "compilerPath": "C:\\w64devkit\\bin\\gcc.exe"
+        }
+    ],
+    "version": 4
+}

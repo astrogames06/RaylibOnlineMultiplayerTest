@@ -34,7 +34,7 @@
 
                         textPromise.then(text => {
                             const data = JSON.parse(text);
-                            // Ignore messages from self (only updates player if its not self)
+                            // Ignore messages from self
                             if (data.id !== Module.player_id) {
                                 console.log(`Player ${data.id} pos: (${data.x}, ${data.y})`);
                                 Module.update_player(data.id, data.x, data.y);
