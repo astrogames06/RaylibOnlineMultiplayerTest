@@ -1,6 +1,7 @@
 import WebSocket, { WebSocketServer } from "ws";
 
-const websocket_server = new WebSocketServer({ port: 9000 });
+const PORT = process.env.PORT || 9000;
+const websocket_server = new WebSocketServer({ port: PORT });
 const clients = new Set();
 
 websocket_server.on('connection', ws => {
@@ -19,4 +20,4 @@ websocket_server.on('connection', ws => {
     });
 });
 
-console.log("BUN WEBSOCKET SERVER RUNNINGS ON ws://10.101.0.73:9000");
+console.log(`BUN WEBSOCKET SERVER RUNNINGS ON ${PORT}`);
