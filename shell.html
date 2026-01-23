@@ -16,7 +16,7 @@
         <script>
             var Module = {
                 onRuntimeInitialized: function () {
-                    const LAN_IP = "10.101.0.73";
+                    const RENDER_WS = "wss://raylibonlinemultiplayertest.onrender.com/";
 
                     Module.onopen_callback = () => console.log("Connected!");
                     Module.onclose_callback = () => console.log("Disconnected!");
@@ -42,7 +42,7 @@
                         });
                     };
 
-                    Module.init_websocket(`ws://${LAN_IP}:9000`);
+                    Module.init_websocket(RENDER_WS);
                 },
                 print: (function() {
                     var element = document.getElementById('output');
